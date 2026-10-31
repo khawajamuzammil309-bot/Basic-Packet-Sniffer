@@ -1,1 +1,3 @@
 # CodeAlpha_Basic-Packet-Sniffer
+This Basic Network Sniffer project, developed for the CodeAlpha Cyber Security Internship (Task 1), is a lightweight command-line tool built using Python 3 and Scapy that continuously captures live IPv4 network traffic across specified interfaces, parses key header fields such as source and destination IP addresses, ports, transport protocols (TCP, UDP, ICMP), and raw payload sizes, displays real-time statistics upon termination, and exports all captured frames directly to a standard .pcap file for deep packet inspection inside Wireshark using execution commands like:
+sudo python3 sniffer.py -i eth0 -c 50 -o capture.pcap
