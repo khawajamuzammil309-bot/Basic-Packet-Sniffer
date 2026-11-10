@@ -1,10 +1,7 @@
 # Task 1: Basic Network Sniffer
 
 ## Overview
-This is a simple Basic Network Sniffer built in Python on Kali Linux. 
-It captures live network packets and displays Source IP, Destination IP, Protocol, and Port.
-
-This project was made as part of the Cyber Security Internship at Arch Technologies for learning purposes only.
+This is a simple Basic Network Sniffer built in Python on Kali Linux. It captures live network packets and displays Source IP, Destination IP, Protocol, and Port. This project was made as part of the Cyber Security Internship at Arch Technologies for learning purposes only.
 
 ## Features
 - Captures live network packets
@@ -20,9 +17,22 @@ This project was made as part of the Cyber Security Internship at Arch Technolog
 - Terminal
 
 ## How to Run
-
 1. Open Terminal in Kali Linux
-
 2. Run the sniffer with root permission:
-```bash
 sudo python3 sniffer.py
+3. Open a second terminal to generate traffic:
+ping -c 5 google.com
+4. You will see live packets in the first terminal.
+
+## Sample Output
+Sniffer Started... Listening for packets...
+Source: 192.168.1.10 -> Destination: 142.250.1.1 | Protocol: TCP | Port: 80
+Source: 192.168.1.10 -> Destination: 8.8.8.8 | Protocol: UDP | Port: 53
+
+
+## Disclaimer
+This tool was made only for learning and on my own network. Do not use it to capture other people's traffic without permission.
+
+## Author
+KHAWAJA MUZAMMIL
+Cyber Security Intern | Arch Technologies
