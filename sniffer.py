@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CodeAlpha Cyber Security Internship - Task 1: Basic Network Sniffer
+
 A beginner-friendly packet sniffer built using Python and Scapy.
 """
 
@@ -86,7 +86,7 @@ def print_summary():
 def main():
     # Setup Command-Line Arguments
     parser = argparse.ArgumentParser(
-        description="CodeAlpha Task 1: Basic Network Packet Sniffer"
+        
     )
     parser.add_argument(
         "-i", "--interface",
